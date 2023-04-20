@@ -96,8 +96,6 @@ Node Package Manager: [NPM](${response.npmLink})
 ## Credits
 ${response.collaborators}
 
-## License
-
 ## Questions
 GitHub: https://github.com/${response.github}
 
