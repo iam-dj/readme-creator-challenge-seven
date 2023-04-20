@@ -114,7 +114,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     `;
 
-    fs.writeFile("README.md", readmeString, (err) =>
+    fs.writeFile("genREADME.md", readmeString, (err) =>
       err ? console.error(err) : console.log("File written successfully!")
     );
   });
