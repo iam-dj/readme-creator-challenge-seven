@@ -7,7 +7,7 @@ inquirer
       type: "list",
       name: "license",
       message: "What color MIT License?",
-      choices: [`green`, `blue`, `black`],
+      choices: [`MIT`, `EPL`, `Apache-2.0`],
     },
     {
       type: "input",
@@ -59,12 +59,20 @@ inquirer
   .then((response) => {
     // console.log('Success!');
 
-    if ((response.license === "blue")) {
+    if ((response.license === "MIT")) {
       var licenseString = `![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)`;
-    } else if ((response.license === "green")) {
-      var licenseString = `![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)`;
+    } else if ((response.license === "EPL")) {
+      var licenseString = `![GitHub license](https://img.shields.io/aur/license/boot)`;
     } else {
-      var licenseString = `![GitHub license](https://img.shields.io/badge/license-MIT-black.svg)`;
+      var licenseString = `![GitHub license](https://img.shields.io/hexpm/l/apa)`;
+    }
+
+    if ((response.license === "MIT")) {
+      var licenseString2 = `Users of software using an MIT License are permitted to use, copy, modify, merge publish, distribute, sublicense and sell copies of the software.`;
+    } else if ((response.license === "EPL")) {
+      var licenseString2 = `The EPL imposes no conditions on using the code in software that's sold commercially except for the aforementioned requirement to extend legal protections to EPL contributors.`;
+    } else {
+      var licenseString2 = `Users of software using an Apache-2.0 License are permitted to use, copy, modify, merge publish, distribute, sublicense and sell copies of the software.`;
     }
 
     // console.log(licenseString);
@@ -95,6 +103,10 @@ Node Package Manager: [NPM](${response.npmLink})
 
 ## Credits
 ${response.collaborators}
+
+## Credits
+${response.license} meaning: 
+${licenseString2}
 
 ## Questions
 GitHub: https://github.com/${response.github}

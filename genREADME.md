@@ -1,11 +1,11 @@
 
     
-![GitHub license](https://img.shields.io/badge/license-MIT-black.svg)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-#Readme Generator
+#readme
 
 ## Description
-it creates a readme file using the answers from the prompts
+generates a readme
 
 ## Table of Contents
 - [Installation](#installation)
@@ -14,18 +14,20 @@ it creates a readme file using the answers from the prompts
 - [License](#license)
 
 ## Installation
-inquirer@8.2.4
+inquirer
 
 ## Usage
-you follow the prompts and answer the questions
+follow prompts
 
 ## Credits
-Node Package Manager: [NPM](www.npmjs.com)
+Node Package Manager: [NPM](www.npm.com)
 
 ## Credits
 no
 
-## License
+## Credits
+MIT meaning: 
+Users of software using an MIT License are permitted to use, copy, modify, merge publish, distribute, sublicense and sell copies of the software.
 
 ## Questions
 GitHub: https://github.com/iam-dj
